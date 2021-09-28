@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --p-dark: #ffb34b;
+  --p-light: #ffc87e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Utility classes */
+
+.up {
+  text-transform: uppercase;
+}
+
+.txt-primary {
+  color: var(--p-dark);
+}
+
+.container {
+  padding: 50px 100px;
+  max-width: 1200;
+}
+
+/* Recipe Card */
+
+.recipe-card {
+  display: flex;
+  flex-direction: row nowrap;
+  height: 600px;
+  overflow: hidden;
+}
+
+.preview-text {
+  flex: 1;
+}
+
+.preview-image {
+  flex: 1;
+  position: relative;
+}
+
+.preview-image img {
+  width: 400px;
+  height: auto;
+}
+
+.preview-image a {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: var(--p-light);
+}
