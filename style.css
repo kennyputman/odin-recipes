@@ -26,8 +26,9 @@ body {
 }
 
 .container {
-  padding: 50px 100px;
-  max-width: 1200;
+  max-width: 1080px;
+  padding: 50px 50px;
+  margin: 0 auto;
 }
 
 /* Recipe Card */
@@ -49,8 +50,9 @@ body {
 }
 
 .preview-image img {
-  width: 400px;
+  width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .preview-image a {
