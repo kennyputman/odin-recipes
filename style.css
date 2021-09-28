@@ -2,7 +2,7 @@
 
 :root {
   --p-dark: #ffb34b;
-  --p-light: #ffc87e;
+  --p-light: #ffd399;
 }
 
 * {
@@ -13,6 +13,16 @@
 
 body {
   font-family: "Quicksand", sans-serif;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: inherit;
+  color: inherit;
 }
 
 /* Utility classes */
@@ -36,8 +46,10 @@ body {
 .recipe-card {
   display: flex;
   flex-direction: row nowrap;
-  height: 600px;
   overflow: hidden;
+  padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .preview-text {
@@ -53,11 +65,4 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
-}
-
-.preview-image a {
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  background-color: var(--p-light);
 }
