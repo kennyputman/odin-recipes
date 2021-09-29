@@ -13,6 +13,7 @@
 
 body {
   font-family: "Quicksand", sans-serif;
+  background-color: #fdfdfd;
 }
 
 a {
@@ -31,6 +32,12 @@ a:visited {
   text-transform: uppercase;
 }
 
+.i-preview {
+  color: var(--p-dark);
+  font-size: 36px;
+  align-self: center;
+}
+
 .txt-primary {
   color: var(--p-dark);
 }
@@ -39,6 +46,29 @@ a:visited {
   max-width: 1080px;
   padding: 50px 50px;
   margin: 0 auto;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  padding: 15px 25px;
+  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right a {
+  margin-right: 15px;
 }
 
 /* Recipe Card */
@@ -65,4 +95,24 @@ a:visited {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+.preview-icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.preview-icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-icon > * {
+  line-height: 1.1em;
+}
+
+.preview-time-format {
+  padding-top: 5px;
+  font-style: italic;
 }
