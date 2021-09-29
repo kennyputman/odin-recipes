@@ -27,6 +27,10 @@ a:visited {
   color: inherit;
 }
 
+li {
+  margin-bottom: 8px;
+}
+
 /* Utility classes */
 
 .up {
