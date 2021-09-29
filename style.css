@@ -18,6 +18,7 @@ body {
 
 a {
   text-decoration: inherit;
+  outline: none;
   color: inherit;
 }
 
@@ -69,6 +70,7 @@ nav {
 
 .nav-right a {
   margin-right: 15px;
+  cursor: pointer;
 }
 
 /* Recipe Card */
@@ -80,6 +82,12 @@ nav {
   padding: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.preview-title {
+  font-size: 1.8em;
+  text-align: center;
+  padding: 5px 15px 20px 15px;
 }
 
 .preview-text {
@@ -115,4 +123,31 @@ nav {
 .preview-time-format {
   padding-top: 5px;
   font-style: italic;
+}
+
+/* recipe page */
+
+.recipe-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding: 15px;
+}
+
+.recipe-info-container {
+  padding: 15px;
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.recipe-title {
+  padding: 15px;
+}
+.recipe-title h1 {
+  text-align: center;
+}
+
+.recipe-info-header {
+  font-weight: 600;
+  font-size: 1.3em;
+  margin-bottom: 10px;
 }
