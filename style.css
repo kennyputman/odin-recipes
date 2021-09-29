@@ -130,6 +130,7 @@ nav {
 .preview-image img {
   width: 100%;
   height: auto;
+  border-radius: 5px;
   object-fit: cover;
 }
 
